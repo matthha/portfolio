@@ -14,7 +14,7 @@ import Learn from './components/Screens/Learn';
 
 
 function App() {
-  const [screen, setScreen] = useState("LeanManufacturing");
+  const [screen, setScreen] = useState("Basic");
   return (
     <div className="App">
       <header className="App-header">      
