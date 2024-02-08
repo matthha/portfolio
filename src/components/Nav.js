@@ -7,7 +7,7 @@ const Nav = ( {setScreen} ) => {
     return (
         <div className="nav grid g5">
         
-        <h1 className='b' >About Us</h1>
+        <h1 className='b' onClick={(e) => setScreen('Basic')}>Home</h1>
         <h1 className='b' onClick={(e) => setScreen('Learn')}>Learn</h1>
         <h1 className='b'>Teach</h1>
         <h1 className='b'>Partner</h1>
