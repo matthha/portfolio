@@ -1,13 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+// import './custom.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ConfigProvider } from 'antd';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ConfigProvider theme={
+      { 
+        cssVar: true, 
+        token: {
+        // Seed Token
+        colorPrimary: '#f26419',
+        borderRadius: 19,
+
+        // Alias Token
+        // '#2f4858' '#33658a' '#86bbd8' '#f6ae2d' '#f26419'
+        colorBgContainer: '#f6ae2d',
+        }, }
+      }>
+      <App />
+    </ConfigProvider>
   </React.StrictMode>
 );
 

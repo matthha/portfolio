@@ -4,16 +4,29 @@ html{
 .App {
   text-align: center;
   /* padding: 3em; */
-  margin: auto;
+  /* margin: auto; */
   /* max-width: 900px; */
   font-family: 'Nunito', sans-serif;
 
+}
+.baseSize {
+  height: 5em;
+  overflow: auto;
+}
+.b1 {
+  background-color: #2f4858;
 }
 p,li{
   line-height: 150%;
 }
 body {
-  margin: 5px;
+  /* margin: 5px; */
+  border-radius: 5px;
+}
+.card {
+  box-shadow: 0px 0px 4px 5px #f6ae2d;
+  border-radius: 10px;
+  margin: 10px;
 }
 .dat h1{
   background: #00274c;
@@ -28,6 +41,13 @@ ul {
 .nav{
   background-color: #e5e6e7;
   color: #00274c;
+}
+.head {
+  margin: 0px;
+  padding: 10px 0px;
+  background-color: rgb(65, 65, 211);
+  background-image: linear-gradient(180deg,#00274c 0,#004c72 100%);
+  color: white;
 }
 .splash{
   margin: 0px;
@@ -65,6 +85,13 @@ hr{
   display: grid;
   gap: 10px;
 }
+.g3{
+  grid-template-columns: 1fr 3fr;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  /* height:300px; */
+ }
 .g2{
   grid-template-columns: 1fr 1fr;
   border: 1px solid blue;
@@ -112,8 +139,10 @@ h1{
 .con{
   padding: 1em;
 }
+        /* // '#2f4858' '#33658a' '#86bbd8' '#f6ae2d' '#f26419' */
 .info{
-  background-color: #e5e6e7;
+  
+  background-color: #33658a;
 }
 .class-stuff{
   padding: 1em;
