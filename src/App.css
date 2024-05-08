@@ -9,9 +9,20 @@ html{
   font-family: 'Nunito', sans-serif;
 
 }
+.newcard {
+  /* display:'block'; */
+  margin: 20px;
+  /* width:'200px'; */
+  /* color:'black'; */
+  /* align-content: center; */
+}
 .baseSize {
-  height: 5em;
+  font-size: 16px;
+  height: 8em;
+  padding: 10px;
   overflow: auto;
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
 }
 .b1 {
   background-color: #2f4858;
@@ -24,7 +35,7 @@ body {
   border-radius: 5px;
 }
 .card {
-  box-shadow: 0px 0px 4px 5px #f6ae2d;
+  box-shadow: 0px 0px 4px 5px #273c4d;
   border-radius: 10px;
   margin: 10px;
 }
@@ -63,9 +74,14 @@ ul {
   text-transform: uppercase;
   
 }
+h3 {
+  font-size: 20px;
+  color: #FFCB05;
+}
 .splash hr + h1 {
   font-size: 200%;
 }
+
 hr{
   height: 0.3em;
   border: none;
@@ -75,7 +91,7 @@ hr{
 .grid {
   padding: .5em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 .g5{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -94,23 +110,13 @@ hr{
  }
 .g2{
   grid-template-columns: 1fr 1fr;
-  border: 1px solid blue;
   display: grid;
   
 }
 .g2 * {
   padding:2px;
 }
-.g2 button, .dat button{
-  background: #FFCB05;
-  color:#00274c;
-  text-transform: uppercase;
-  margin: 3px;
-}
-.g2 h2 {
-  font-weight: bolder;
-  color:#00274c
-}
+
 
 h1{
   font-size: 1.5em;
@@ -125,33 +131,10 @@ h1{
   padding: 1em;
   font-size: 0.8em;
 }
-.tile h2, .tile button{
-  grid-column: 1/-1;
-  width: auto;
-  justify-self: center;
-}
-.g1-3{
-  grid-template-columns: 1fr 3fr;
-}
-.instructors{
-  grid-column: 1/-1;
-}
-.con{
-  padding: 1em;
-}
-        /* // '#2f4858' '#33658a' '#86bbd8' '#f6ae2d' '#f26419' */
+
+  /* // '#2f4858' '#33658a' '#86bbd8' '#f6ae2d' '#f26419' */
 .info{
   
   background-color: #33658a;
 }
-.class-stuff{
-  padding: 1em;
-}
-.class-stuff h1 {
-  background-color: #00274c;
-  color: white;
-  text-transform: uppercase;
-}
-.class-stuff p, .class-stuff li {
-  text-align: left;
-}
+
