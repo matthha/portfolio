@@ -1,4 +1,5 @@
-import {  Button, Carousel, Tabs } from 'antd';
+import {  Carousel, Tabs } from 'antd';
+import { Button } from 'react-bootstrap';
 import React from 'react';
 
 
@@ -11,7 +12,7 @@ const Section = (props) => {
 
    return (
        <div className="g3">
-         <div className="newcard" style={{display:'block',margin:'23px', width:'200px', color:'black', alignContent:'center'}}>
+         <div className="newcard" style={{display:'block',margin:'23px', width:'200px', color:'white', alignContent:'center'}}>
          <Carousel arrows autoplay >
           {props.pics.map((x,index)=> (
             // <Card>
@@ -20,14 +21,15 @@ const Section = (props) => {
           ))}
          </Carousel>
          </div>
-         <div className='grid' style={{}}>
+         <div className='grid newcard info' style={{}}>
          <h1>{props.title}</h1>
          <p>{props.summary}</p>
-         <Tabs defaultActiveKey="1" tabPosition='top'  style={{height: 220}} items={temp} />
+         <Tabs defaultActiveKey={temp.length} tabPosition='top'  style={{height: 220}} items={temp} />
           <div >
             {props?.links && props.links.map((x,index)=>(
               <>
-              <Button href={x[0]} target='blank'>{x[1]}</Button>{' '}
+              {/* <Button href={x[0]} target='blank'>{x[1]}</Button>{' '} */}
+              <Button href={x[0]} target='blank' variant="primary">{x[1]}</Button>{' '}
               </>
             ))}
           </div>

@@ -12,6 +12,8 @@ html{
 .newcard {
   /* display:'block'; */
   margin: 20px;
+  border-radius: 8px;
+  /* border: solid #e5e6e7; */
   /* width:'200px'; */
   /* color:'black'; */
   /* align-content: center; */
@@ -25,7 +27,7 @@ html{
   font-family: 'Nunito', sans-serif;
 }
 .b1 {
-  background-color: #2f4858;
+  background-color: #67b0de;
 }
 p,li{
   line-height: 150%;
@@ -35,7 +37,7 @@ body {
   border-radius: 5px;
 }
 .card {
-  box-shadow: 0px 0px 4px 5px #273c4d;
+  box-shadow: 0px 0px 4px 5px #5c8fb8;
   border-radius: 10px;
   margin: 10px;
 }
@@ -134,7 +136,7 @@ h1{
 
   /* // '#2f4858' '#33658a' '#86bbd8' '#f6ae2d' '#f26419' */
 .info{
-  
-  background-color: #33658a;
+  background-color: #ffffff; 
+  /* background-color: #33658a; */
 }
 

@@ -14,12 +14,12 @@ root.render(
         cssVar: true, 
         token: {
         // Seed Token
-        colorPrimary: '#f26419',
+        colorPrimary: '#86bbd8',
         borderRadius: 19,
 
         // Alias Token
         // '#2f4858' '#33658a' '#86bbd8' '#f6ae2d' '#f26419'
-        colorBgContainer: '#f6ae2d',
+        colorBgContainer: '#fff',
         }, }
       }>
       <App />
