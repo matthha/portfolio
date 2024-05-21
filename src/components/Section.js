@@ -1,5 +1,6 @@
-import {  Carousel, Tabs } from 'antd';
+import {  Carousel } from 'antd';
 import { Button } from 'react-bootstrap';
+import { Tab, Tabs } from 'react-bootstrap';
 import React from 'react';
 
 
@@ -11,8 +12,8 @@ const Section = (props) => {
   // console.log(temp)
 
    return (
-       <div className="g3">
-         <div className="newcard" style={{display:'block',margin:'23px', width:'200px', color:'white', alignContent:'center'}}>
+       <div className="g3 sec">
+         <div className="newcard again" style={{margin:'23px', width:'200px', color:'white', alignContent:'center'}}>
          <Carousel arrows autoplay >
           {props.pics.map((x,index)=> (
             // <Card>
@@ -24,7 +25,17 @@ const Section = (props) => {
          <div className='grid newcard info' style={{}}>
          <h1>{props.title}</h1>
          <p>{props.summary}</p>
-         <Tabs defaultActiveKey={temp.length} tabPosition='top'  style={{height: 220}} items={temp} />
+         {/* <Tabs defaultActiveKey={temp.length} tabPosition='top'  style={{height: 220}} items={temp} /> */}
+         <Tabs
+          defaultActiveKey={props.parts.length-1}
+          id="justify-tab-example"
+          className="mb-3"
+          justify
+          >
+            {props?.parts && props.parts.map((x,index)=>(
+              <Tab eventKey={index} title={x[0]}>{x[1]}</Tab>
+            ))}
+          </Tabs>
           <div >
             {props?.links && props.links.map((x,index)=>(
               <>

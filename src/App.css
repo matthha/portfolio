@@ -1,6 +1,36 @@
 html{
   font-size: 18px;
 }
+.again {display: none;}
+.cont { 
+  grid-column: 0/4;
+  margin: 20;
+  background : #000;
+  background-color: #86bbd8;
+}
+.sec{ 
+  grid-column: 1 / span 6;
+  margin: 20;
+  background-color:#86bbd8;
+  border-radius: 10px;
+}
+.bot {
+  background-color: #86bbd8;
+  border: 8px ridge #077ab8 ;
+  border-radius: 10px;
+}
+.g2 {
+  grid-template-columns: 1fr 3fr;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+.g3{
+  grid-template-columns: 1fr 3fr;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+ }
 .App {
   text-align: center;
   /* padding: 3em; */
@@ -12,7 +42,7 @@ html{
 .newcard {
   /* display:'block'; */
   margin: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   /* border: solid #e5e6e7; */
   /* width:'200px'; */
   /* color:'black'; */
@@ -34,10 +64,11 @@ p,li{
 }
 body {
   /* margin: 5px; */
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .card {
   box-shadow: 0px 0px 4px 5px #5c8fb8;
+  background-color: #86bbd8;
   border-radius: 10px;
   margin: 10px;
 }
@@ -96,28 +127,10 @@ hr{
   grid-template-columns: 1fr;
 }
 .g5{
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
 }
-.g4{
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  display: grid;
-  gap: 10px;
-}
-.g3{
-  grid-template-columns: 1fr 3fr;
-  display: grid;
-  gap: 10px;
-  padding: 10px;
-  /* height:300px; */
- }
-.g2{
-  grid-template-columns: 1fr 1fr;
-  display: grid;
-  
-}
-.g2 * {
-  padding:2px;
-}
+
+
 
 
 h1{
@@ -125,9 +138,6 @@ h1{
 
 }
 
-.b:hover{
-  background-color:#FFCB05;
-}
 .footer div, .footer img{
   text-align: left;
   padding: 1em;
@@ -138,5 +148,24 @@ h1{
 .info{
   background-color: #ffffff; 
   /* background-color: #33658a; */
+}
+@media only screen and (min-width: 700px) {
+  /* For tablets: */
+  /* .grid {display: flex;} */
+  .again {
+    display: block;
+  }
+  .g3{
+    grid-template-columns: 1fr 3fr;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+   }
+   .sec{ 
+    grid-column: 2 / span 4;
+     margin: 20;
+     background-color:#86bbd8;
+  }
+
 }
 
