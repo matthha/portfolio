@@ -14,6 +14,12 @@ html{
   background-color:#86bbd8;
   border-radius: 10px;
 }
+.element-content {
+  border-radius: 2px;
+  border-bottom: solid;
+  border-bottom-color: #69abe9;
+  margin-bottom: 15px;
+}
 .bot {
   background-color: #86bbd8;
   border: 8px ridge #077ab8 ;
@@ -87,6 +93,7 @@ ul {
   color: #00274c;
 }
 .head {
+  
   margin: 0px;
   padding: 10px 0px;
   background-color: rgb(65, 65, 211);
@@ -94,13 +101,16 @@ ul {
   color: white;
 }
 .splash{
-  margin: 0px;
+  position:fixed;
+  margin-bottom: 50px;
+  width: 100%;
   padding: 10px 0px;
   background-color: rgb(65, 65, 211);
   background-image: linear-gradient(180deg,#00274c 0,#004c72 100%);
   color: white;
 }
 .splash > h1 {
+  
   margin: 0px 10%;
   /* padding: 1em; */
   text-align: left;

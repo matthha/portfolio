@@ -2,7 +2,7 @@
 const Header = () => {
 
     return (
-        <div className="grid b1 splash">
+        <div className="splash">
         <h1>Matthew Hall</h1>
         </div>
     )

@@ -9,7 +9,7 @@ return (
        
         <div className="address">
         <h5>This site was made with GitHub Pages</h5>
-        <p>Last Updated 2024-05-07</p>
+        <p>Last Updated 2024-09-05</p>
         </div>
     </div>
 )
