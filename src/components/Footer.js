@@ -3,7 +3,7 @@ const Footer = () => {
 return (
     <div className="grid g3 footer">
         <div className="address">
-            <p>Matthew Hall<br/>Ann Arbor, MI<br/>
+            <p>Matthew Hall<br/>Chicago, IL<br/>
             <a href="mailto:matthha@umich.edu">matthha@umich.edu</a></p>
         </div>
        
