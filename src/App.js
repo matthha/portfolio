@@ -1,6 +1,5 @@
-import './Reset.css'
-
-import Header from './components/Header'
+import './Reset.css';
+import Header from './components/Header';
 import Footer from './components/Footer';
 import Section from './components/Section';
 import { examples } from './Content';
@@ -13,20 +12,19 @@ function App() {
     <div className="App">
 
       <Header />
-      <div style={{display:'flex',flexDirection:'column',alignItems:'center',paddingTop:'80px'}}>
+      <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
 
 {/* Testing stuff */}
 
 
 {/* Start of my content */}
         <div className='element-content tile1'>
-          <h2>About Me</h2>
+          <h2 id='aboutMe'>About Me</h2>
           {/* <img src={require("./images/Mirror Match Info.png")} alt="..." width="800" height="auto"/> */}
           {/* <p>A prior logistics manager of 5 years, I have changed career paths into web development with a focus on user centered design.</p> */}
           <p style={{maxWidth:'500px', alignSelf:'center', display:'inline-block'}}>I'm a front end web developer that likes to learn more about full stack development. I focused on UX in school and try to make products that are easily adapted by the intended audience.</p>
         </div>
-
-        <div className='element-content tile2'>
+        <div className='element-content tile2' id='mirrorMatch'>
           <h2>Mirror Match</h2>
           <p>A design prototype for people who want a little more help getting ready.</p>
           {/* <Button href='https://matthha.github.io/gov-property-taxes/' target='blank'>Site</Button> */}
@@ -36,7 +34,7 @@ function App() {
 
         <div className='element-content tile3'>
           <h2>CCHS</h2>
-          <p>A high school orientation app for staff to administer and track online.</p>
+          <p>A high school orientation app for staff to administer and track progress online.</p>
           <div>
             <a type="button" class="btn btn-outline-primary btn-sm" href='https://si-699-school.webflow.io/' target='blank'>Article</a>{'  '}
             <a type="button" class="btn btn-outline-primary btn-sm" href='https://github.com/matthha/react-amp' target='blank'>GitHub</a>
