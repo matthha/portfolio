@@ -14,7 +14,18 @@ html{
   background-color:#86bbd8;
   border-radius: 10px;
 }
-
+.spiral {
+  fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.665;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal;
+  
+}
+.spir{
+  border: 1px solid yellow
+}
+.hex {
+  stroke-width: 2px;
+  marker: url(#circle);
+}
+.s2{fill:none;fill-rule:evenodd;stroke:#9c1d1d;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal}
 
 
 .jumbotron {
@@ -132,8 +143,8 @@ ul {
   list-style: disc inside none;
 }
 .nav{
-  /* background-color: #e5e6e7;
-  color: #00274c; */
+  background-color: #e5e6e7;
+  color: #00274c;
 
 }
 .list {
